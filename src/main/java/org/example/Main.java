@@ -10,11 +10,12 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner inputScanner = new Scanner(System.in);
-        System.out.println("--- Directory Analysis System ---");
+        System.out.println("0_0 Directory Analysis System 0_0");
 
         // 1. Prompt the user
-        System.out.print("Please enter the directory path to analyze: ");
+        System.out.print("Halo,can you enter the directory path to analyze: ");
         String pathInput = inputScanner.nextLine();
+        System.out.print("Thanks you for your cooperation!\n");
 
         // 2. Create the analyzer object (OOP Design)
         DirectoryAnalyzer analyzer = new DirectoryAnalyzer(pathInput);
@@ -24,7 +25,7 @@ public class Main {
             analyzer.analyze();
 
             // 4. Display results
-            System.out.println("\n--- Analysis Results ---");
+            System.out.println("\n Q_Q Analysis Results Q_Q");
             System.out.println("Number of Java Files = " + analyzer.getJavaFileCount());
             System.out.println("Number of Issues     = " + analyzer.getIssueCount());
         } else {
